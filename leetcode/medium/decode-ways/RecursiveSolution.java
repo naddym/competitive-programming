@@ -40,6 +40,7 @@
 
 public class RecursiveSolution {
 
+    // TLE Solution
     public int numDecodings(String s) {
         return decodeWays(s);
     }
@@ -76,7 +77,7 @@ public class RecursiveSolution {
         if (len == 0 ) {
             return false;
         } else if (len == 1) {
-            return Integer.parseInt(s) > 1 && Integer.parseInt(s) < 10;
+            return Integer.parseInt(s) > 0 && Integer.parseInt(s) < 10;
         } else {
             return Integer.parseInt(s) > 9 && Integer.parseInt(s) < 27;            
         }
